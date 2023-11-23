@@ -23,7 +23,7 @@ def load_images(path):
 
     return image_list,image_names
 
-output_directory = "/home/vikas/Downloads/DL_PROJECT/new"
+output_directory = "/home/user/Dataset/train"
 if not os.path.exists(output_directory):
   os.makedirs(output_directory)
 
@@ -53,8 +53,7 @@ def apply_random_filters(images, filter_functions, num_filters_to_apply=1):
 
 filter_functions = [am.brighten,am.darken,am.add_shadow,am.add_snow,am.add_rain, am.add_fog, am.add_sun_flare, am.add_speed, am.add_autumn]
 
-path=('/home/vikas/Videos/t/*.jpg')
-# path=('valid/images/0d056ff0-c51e-48af-b9a8-9a01613480b3_jpg.rf.cbb724bd95fe3ac95e6a029542cd3cae.jpg')
+path=('/home/user/Dataset/train/images/*.jpg')     # Dataset directory for training images
 images,names= load_images(path)
 print(len(images),len(names))
 
