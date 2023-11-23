@@ -1,0 +1,6 @@
+names:
+- licenseplate
+nc: 1
+test: /content/drive/MyDrive/License_Plate_Dataset/test/images
+train: /content/drive/MyDrive/License_Plate_Dataset/train/images
+val: /content/drive/MyDrive/License_Plate_Dataset/valid/images
