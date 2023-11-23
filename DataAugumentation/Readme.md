@@ -1,4 +1,4 @@
-# Data Augmentation Pipeline for YOLOv7 License Plate Detection
+# Data Augmentation Pipeline for YOLOv8 License Plate Detection
 
 ## Overview
 This repository provides a data augmentation pipeline for enhancing the YOLOv8 license plate detection model's performance. The dataset can be downloaded from [Roboflow](https://universe.roboflow.com/kanwal-masroor-gv4jr/yolov7-license-plate-detection/dataset/3).
@@ -25,3 +25,15 @@ Run the following command to apply augmentation:
 ```bash
 python main.py
 ```
+
+After successfully augmenting the dataset, follow the license plate recognition pipeline in Colab. Upload the dataset directory containing:
+
+/train/images
+/test/images
+/valid/images
+data.yaml
+
+to drive as Dataset folder
+Make sure the data.yaml file is correctly configured for your dataset and model requirements. Adjust file paths based on your system configuration.
+
+
